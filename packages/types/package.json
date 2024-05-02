@@ -1,0 +1,13 @@
+{
+  "name": "@easy-task/types",
+  "private": true,
+  "main": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

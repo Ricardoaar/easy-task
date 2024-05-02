@@ -1,0 +1,23 @@
+{
+  "name": "easy-task-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "next",
+    "nest",
+    "monorepo",
+    "nx",
+    "grpc",
+    "microservices"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nx": "^18.3.4",
+    "typescript": "^5.4.5"
+  }
+}
