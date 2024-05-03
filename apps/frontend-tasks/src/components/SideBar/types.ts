@@ -1,14 +1,16 @@
 import { ListItemIconProps } from "@mui/material/ListItemIcon/ListItemIcon";
-import { ReactElement, ReactNode } from "react";
+import { FC, PropsWithChildren, ReactNode, ComponentProps } from "react";
 
-export interface SideBarItems<ItemProps> extends Partial<ListItemIconProps> {
+
+export interface SideBarItems extends Partial<ListItemIconProps> {
   title: string;
   icon: ReactNode;
-  itemContainer?: React.FC<ItemProps>;
-  itemProps?: ItemProps;
+  itemContainer?: FC;
+  itemContainerProps?: ComponentProps<FC<any>>;
 }
 
-export interface SideBarProps<ItemProps> {
-  items: SideBarItems<ItemProps>[];
-  window: Window;
+export interface SideBarProps {
+  items?: SideBarItems[];
+  header?: ReactNode;
+  drawerRef?: React.RefObject<HTMLDivElement>;
 }
